@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+    padding :0 ;
+    margin  :0 ;
+}
+
+body{
+    width: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #dedede;
+}
+
+.buku {
+    padding: 0 6px;
+    margin-right: 10px;
+    float: left;
+    border:1px solid #dedede;
+    width: 23%;
+}
+.buku #list-terbaca {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+#list-belumDibaca {
+    list-style: none;
+}
+
+#container{
+    max-width: 1140px;
+    text-align: center;
+    background: #fff;
+    overflow: hidden;
+    border:0px solid #d9d9d9;
+    margin : 0px 90px;
+    padding:20px 20px 20px 20px;
+}
+
+.header{
+    border-radius: 10px 10px 0 0 ;
+    padding: 10px 0 0 10px;
+    text-align : center;
+    background-image: url(./assets/books-img.jpg);
+}
+
+.header h1{
+    font-size: 40px;
+    color:#fff;
+    padding-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align:center;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+}
+.input-form label {
+    text-align: left;
+}
+
+.left{
+    width: 280px;
+    color:#fff;
+    border: 1px solid #dedede;
+    padding: 10px;
+    margin: 10px 10px 10px 0px;
+    float: left;
+    background-color: #281e5a;
+}
+
+.left ul{
+    list-style-type: none;
+}
+
+
+
+.middle2{
+    width: 790px;
+    height:100%;
+    padding: 5px;
+    margin: 10px;
+    float: left;
+}
+
+
+.middle2 a{
+    font-weight: bold;
+}
+
+.right{
+    width: 280px;
+    color: #fff;
+    border: 1px solid #dedede;
+    padding: 10px;
+    margin: 10px 0 10px 10px;
+    float: right;
+    background-color: #281e5a;
+}
+
+.right ul{
+    list-style-type: none;
+}
+
+.right ul li{
+    display: block;
+}
+
+.right ul li a{
+    display: block;
+    font-size: 17px;
+    border-bottom: 1px dotted #d4d2db;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+}
+
+.right ul li a:hover{
+    color: #ca1414;
+}
+
+#footer{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: #6813c9;
+    clear: both;
+    border: 1px solid #dedede;
+    padding: 15px;
+}
+
+@media screen and(max-width:995px){
+    #container{
+        width: 100%;
+    }
+    #left-columm{
+        width: 70%;
+    }
+    #right-columm{
+        width: 30%;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1140px){
+    .container{
+        width: 100%;
+    }
+    .left{
+        width: 25%;
+        background: #0c7575d7;
+    }
+    .middle{
+        width: 68%;
+        float: right;
+    }
+     .middle2{
+        width: 90%;
+        float: right;
+    }
+    .right{
+        clear: both;
+        padding: 1% 4%;
+        width: auto;
+        float: none;
+        background: #0c7575d7;   
+    }
+}
+@media screen and (max-width:780px){
+    .header,
+    .footer{
+        text-align: center;
+    }
+    .left{
+        width: auto;
+        float: none;
+    }
+
+    .middle{
+        width: auto;
+        float:  none;
+    }
+
+    .right{
+        width: auto;
+        float: none;
+    }
+}
